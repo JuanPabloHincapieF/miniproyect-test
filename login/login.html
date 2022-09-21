@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
       rel="stylesheet"
     />
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -72,7 +74,12 @@
                   >
                 </div>
                 <div class="login10 mt-4">
-                  <input type="submit" value="LOGIN" class="custom-button" />
+                  <input
+                    type="submit"
+                    onclick="login()"
+                    value="LOGIN"
+                    class="custom-button"
+                  />
                 </div>
               </div>
             </div>
@@ -81,23 +88,13 @@
       </div>
     </div>
 
-    <!-- show/hide password -->
-    <script>
-      function showPassword() {
-        let x = document.getElementById("floatingPassword");
-        if (x.type === "password") {
-          x.type = "text";
-        } else {
-          x.type = "password";
-        }
-      }
-    </script>
-
     <!-- JavaScript Bundle with Popper -->
     <script
       src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
+    <!-- login -->
+    <script src="login.js"></script>
   </body>
 </html>
